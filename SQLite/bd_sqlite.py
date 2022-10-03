@@ -32,6 +32,14 @@ cursor = conexao.cursor()
 # conexao.commit()
 
 
+# cursor.execute(
+#     'DELETE FROM clientes WHERE id=:id',
+#     # aqui ele vai deletar um usuario chamado Test
+#     {'id': 7}
+# )
+
+# conexao.commit()
+
 cursor.execute('SELECT * FROM clientes')
 
 for linha in cursor.fetchall():
