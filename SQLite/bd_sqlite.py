@@ -41,7 +41,7 @@ cursor = conexao.cursor()
 # conexao.commit()
 
 cursor.execute('SELECT nome, peso FROM clientes WHERE peso> :peso',
-               {'peso': 50}) # ele elimina pessoas que tem menos de 50kg 
+               {'peso': 50})  # ele elimina pessoas que tem menos de 50kg
 
 for linha in cursor.fetchall():
     nome, peso = linha
